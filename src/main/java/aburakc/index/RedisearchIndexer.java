@@ -19,7 +19,7 @@ public class RedisearchIndexer implements Indexer {
                 .addNumericField("endYear")
                 .addNumericField("runtimeMinutes")
                 .addTextField("genres", 1.0);
-        //client.createIndex(sc, Client.IndexOptions.Default());
+        client.createIndex(sc, Client.IndexOptions.Default());
     }
 
     public void index(Movie movie) {
